@@ -1,0 +1,83 @@
+[
+  {
+    "date": "01/20/26",
+    "description": "BKOFAMERICA MOBILE 01/20 3668594519 DEPOSIT *MOBILE CA",
+    "amount": 3200.0,
+    "balance": 8175.31,
+    "transaction_type": "",
+    "suggested_account": "Customer Deposits",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/30/26",
+    "description": "BKOFAMERICA MOBILE 01/30 3701489461 DEPOSIT *MOBILE CA",
+    "amount": 2193.0,
+    "balance": 9958.62,
+    "transaction_type": "",
+    "suggested_account": "Customer Deposits",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/30/26",
+    "description": "BKOFAMERICA MOBILE 01/30 3671155919 DEPOSIT *MOBILE CA",
+    "amount": 304.0,
+    "balance": 9958.62,
+    "transaction_type": "",
+    "suggested_account": "Customer Deposits",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/02/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 2528960322",
+    "amount": -31.0,
+    "balance": 5681.58,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/05/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 4055180269",
+    "amount": -117.0,
+    "balance": 5564.58,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/16/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 3859710903",
+    "amount": -373.27,
+    "balance": 5191.31,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/20/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 4688310798",
+    "amount": -216.0,
+    "balance": 8175.31,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/26/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 1227203211",
+    "amount": -250.0,
+    "balance": 7925.31,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  },
+  {
+    "date": "01/30/26",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 1980774847",
+    "amount": -463.69,
+    "balance": 9958.62,
+    "transaction_type": "",
+    "suggested_account": "Deposits Paid to Vendors",
+    "suggested_account_type": "Current Asset"
+  }
+]

@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# VS Code settings
+.vscode/
+
+# Environment variables
+.env
+
+# Test input files
+test_inputs/
+
+# Generated output files
+output/*.xlsx
+
+# Logs
+*.log

@@ -1,0 +1,162 @@
+[
+  {
+    "date": "12/01/25",
+    "description": "BKOFAMERICA MOBILE 12/02 3604223926 DEPOSIT *MOBILE CA",
+    "amount": 2500.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/08/25",
+    "description": "Online Banking transfer from CHK 6789 Confirmation# 2005630193",
+    "amount": 1265.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/17/25",
+    "description": "COINBASE INC. DES:5C480FCD ID:RTL-KC4GPAAR INDN:VERONICA M ALVAREZ CO ID:1327000623 PPD",
+    "amount": 3186.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/19/25",
+    "description": "BKOFAMERICA MOBILE 12/19 3678093265 DEPOSIT *MOBILE CA",
+    "amount": 3000.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/02/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 1671897459",
+    "amount": -200.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/03/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 1181956639",
+    "amount": -2500.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/04/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 1790568187",
+    "amount": -1000.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/05/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 2390910514",
+    "amount": -300.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/05/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 2391883931",
+    "amount": -450.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/05/25",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 0495555583",
+    "amount": -117.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/05/25",
+    "description": "COINBASE INC. DES:4708F9FE ID:RTL-MRR8YHNL INDN:VERONICA M ALVAREZ CO ID:1327000623 WEB",
+    "amount": -1500.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/09/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 2429516471",
+    "amount": -200.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/10/25",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 4041131827",
+    "amount": -16.13,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/22/25",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 1843751917",
+    "amount": -12.95,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/29/25",
+    "description": "Online Banking payment to CRD 5957 Confirmation# 4294320576",
+    "amount": -35.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/30/25",
+    "description": "Online Banking transfer to CHK 6789 Confirmation# 1211829346",
+    "amount": -2027.64,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/31/25",
+    "description": "IRS DES:USATAXPYMT ID:274576552034006 INDN:FERTILITYTIES CO ID:3387702000 CCD",
+    "amount": -598.63,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/31/25",
+    "description": "IRS DES:USATAXPYMT ID:274576552467195 INDN:FERTILITYTIES CO ID:3387702000 CCD",
+    "amount": -111.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/31/25",
+    "description": "EMPLOYMENT DEVEL DES:EDD EFTPMT ID:XXXXXXXXX INDN:FERTILITYTIES CO ID:2282533055 CCD",
+    "amount": -64.98,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  },
+  {
+    "date": "12/31/25",
+    "description": "Monthly Maintenance Fee",
+    "amount": -16.0,
+    "balance": null,
+    "transaction_type": "",
+    "category": "Uncategorized"
+  }
+]
