@@ -1,0 +1,20 @@
+services:
+  bank-statement-intelligence:
+    build: .
+
+    container_name: bank_statement_intelligence
+
+    ports:
+      - "8501:8501"
+
+    env_file:
+      - .env
+
+    volumes:
+      - ./output:/app/output
+      - ./test_inputs:/app/test_inputs
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    restart: unless-stopped

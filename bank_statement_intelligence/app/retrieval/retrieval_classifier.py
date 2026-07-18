@@ -10,9 +10,11 @@ from app.memory.embedding_builder import EmbeddingBuilder
 from app.memory.faiss_index import FaissIndex
 from app.retrieval.candidate_ranker import CandidateRanker
 from app.retrieval.confidence_engine import ConfidenceEngine
+from app.verification.gemini_verifier import verify_transaction
 
 logger = logging.getLogger(__name__)
 DEFAULT_TOP_K = 20
+DEFAULT_VERIFICATION_THRESHOLD = 80
 INPUT_FILE = Path("output/transactions.json")
 OUTPUT_FILE = Path("output/classified_transactions.json")
 
@@ -28,6 +30,7 @@ class RetrievalClassifier:
         self.top_k = DEFAULT_TOP_K
         self.candidate_ranker = CandidateRanker()
         self.confidence_engine = ConfidenceEngine()
+        self.verification_threshold = DEFAULT_VERIFICATION_THRESHOLD
 
         if not self.index.is_ready():
             self._build_memory_index()
@@ -103,6 +106,10 @@ class RetrievalClassifier:
             best_candidate["maximum_similarity"] = best_candidate.get("maximum_similarity", 0.0)
             best_candidate["classification_frequency"] = best_candidate.get("frequency", 0)
             best_candidate["merchant_match_count"] = best_candidate.get("merchant_match_count", 0)
+            best_candidate["verification_reason"] = ""
+            best_candidate["verification_method"] = "Retrieval"
+            best_candidate["verification_confidence"] = confidence
+            best_candidate = self._apply_verification_if_needed(best_candidate, transaction, top_candidates, top_examples)
             classified.append({**transaction, **best_candidate})
 
         return classified
@@ -131,6 +138,86 @@ class RetrievalClassifier:
             f"debit/credit match {candidate.get('debit_credit_match', 0.0):.4f}, "
             f"description overlap {candidate.get('description_overlap', 0.0):.4f}."
         )
+
+    def _apply_verification_if_needed(
+        self,
+        candidate: dict[str, Any],
+        transaction: dict[str, Any],
+        top_candidates: list[dict[str, Any]],
+        top_examples: list[HistoricalExampleSimilarity],
+    ) -> dict[str, Any]:
+        confidence = int(candidate.get("confidence", 0))
+        verification_threshold = getattr(self, "verification_threshold", DEFAULT_VERIFICATION_THRESHOLD)
+        if confidence >= verification_threshold:
+            candidate["verification_reason"] = ""
+            candidate["verification_method"] = "Retrieval"
+            candidate["verification_confidence"] = confidence
+            return candidate
+
+        verification_payload = {
+            **transaction,
+            "original_transaction": transaction,
+            "description": transaction.get("description", ""),
+            "debit": transaction.get("debit"),
+            "credit": transaction.get("credit"),
+            "confidence": confidence,
+            "status": candidate.get("status", "Low"),
+            "top_candidates": top_candidates,
+            "retrieved_neighbors": [
+                {
+                    "similarity": neighbor.similarity,
+                    "classification_code": neighbor.example.item_split_account or neighbor.example.name,
+                    "classification_name": neighbor.example.classification_name,
+                    "classification_type": neighbor.example.classification_type,
+                    "historical_description": neighbor.example.description,
+                    "merchant": neighbor.example.name,
+                    "transaction_type": neighbor.example.transaction_type,
+                    "debit": neighbor.example.debit,
+                    "credit": neighbor.example.credit,
+                }
+                for neighbor in top_examples
+            ],
+        }
+
+        try:
+            verification_result = verify_transaction(verification_payload)
+        except Exception as exc:
+            logger.warning("Gemini verification raised an exception for transaction '%s': %s", transaction.get("description", ""), exc)
+            verification_result = {
+                "verification_method": "Retrieval Only",
+                "verification_reason": "Gemini unavailable",
+                "confidence": confidence,
+            }
+
+        gemini_confidence = int(verification_result.get("confidence", 0))
+        verification_method = verification_result.get("verification_method") or verification_result.get("method") or "Retrieval"
+        verification_reason = verification_result.get("verification_reason") or verification_result.get("reason") or ""
+
+        if verification_method == "Gemini Verification" and gemini_confidence > confidence:
+            candidate.update({
+                "classification_code": verification_result.get("classification_code", candidate.get("classification_code", "")),
+                "classification_name": verification_result.get("classification_name", candidate.get("classification_name", "")),
+                "classification_type": verification_result.get("classification_type", candidate.get("classification_type", "")),
+                "confidence": gemini_confidence,
+                "reason": verification_result.get("reason", ""),
+                "method": "Gemini Verification",
+            })
+            candidate["verification_reason"] = verification_reason
+            candidate["verification_method"] = "Gemini Verification"
+            candidate["verification_confidence"] = gemini_confidence
+            return candidate
+
+        if verification_result.get("verification_method") == "Retrieval Only" or verification_result.get("verification_reason") == "Gemini unavailable":
+            candidate["verification_reason"] = verification_reason or "Gemini unavailable"
+            candidate["verification_method"] = "Retrieval Only"
+            candidate["verification_confidence"] = confidence
+            candidate["method"] = "Retrieval"
+            return candidate
+
+        candidate["verification_reason"] = verification_reason
+        candidate["verification_method"] = "Retrieval"
+        candidate["verification_confidence"] = confidence
+        return candidate
 
     def _example_metadata(self, example: HistoricalExample) -> dict[str, Any]:
         return {

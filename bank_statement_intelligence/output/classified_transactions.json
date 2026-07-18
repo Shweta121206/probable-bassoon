@@ -317,7 +317,10 @@
       "confidence": 53
     },
     "ranking_explanation": "Confidence is based on average similarity 0.7235, maximum similarity 0.7244, frequency 5, merchant matches 5, debit/credit match 0.0000, description overlap 0.0000.",
-    "classification_frequency": 5
+    "classification_frequency": 5,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 53
   },
   {
     "date": "12/08/25",
@@ -637,7 +640,10 @@
       "confidence": 39
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8997, maximum similarity 0.9019, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.7500.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 39
   },
   {
     "date": "12/17/25",
@@ -972,7 +978,10 @@
       "confidence": 35
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8927, maximum similarity 0.8927, frequency 1, merchant matches 0, debit/credit match 0.0000, description overlap 0.6000.",
-    "classification_frequency": 1
+    "classification_frequency": 1,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 35
   },
   {
     "date": "12/19/25",
@@ -1307,7 +1316,10 @@
       "confidence": 52
     },
     "ranking_explanation": "Confidence is based on average similarity 0.7210, maximum similarity 0.7214, frequency 3, merchant matches 3, debit/credit match 0.0000, description overlap 0.0000.",
-    "classification_frequency": 3
+    "classification_frequency": 3,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 52
   },
   {
     "date": "12/02/25",
@@ -1627,7 +1639,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9065, maximum similarity 0.9090, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/03/25",
@@ -1947,7 +1962,10 @@
       "confidence": 41
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9131, maximum similarity 0.9159, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 1.0000.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 41
   },
   {
     "date": "12/04/25",
@@ -2267,7 +2285,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9054, maximum similarity 0.9084, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/05/25",
@@ -2587,7 +2608,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9095, maximum similarity 0.9118, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/05/25",
@@ -2907,7 +2931,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9091, maximum similarity 0.9115, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/05/25",
@@ -3182,7 +3209,10 @@
       "confidence": 46
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8955, maximum similarity 0.9004, frequency 20, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 20
+    "classification_frequency": 20,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 46
   },
   {
     "date": "12/05/25",
@@ -3517,7 +3547,10 @@
       "confidence": 38
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9438, maximum similarity 0.9438, frequency 1, merchant matches 0, debit/credit match 0.0000, description overlap 0.8000.",
-    "classification_frequency": 1
+    "classification_frequency": 1,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 38
   },
   {
     "date": "12/09/25",
@@ -3837,7 +3870,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9070, maximum similarity 0.9098, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/10/25",
@@ -4112,7 +4148,10 @@
       "confidence": 46
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8904, maximum similarity 0.8948, frequency 20, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 20
+    "classification_frequency": 20,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 46
   },
   {
     "date": "12/22/25",
@@ -4387,7 +4426,10 @@
       "confidence": 46
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8976, maximum similarity 0.9020, frequency 20, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 20
+    "classification_frequency": 20,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 46
   },
   {
     "date": "12/29/25",
@@ -4662,7 +4704,10 @@
       "confidence": 46
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8979, maximum similarity 0.9034, frequency 20, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 20
+    "classification_frequency": 20,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 46
   },
   {
     "date": "12/30/25",
@@ -4982,7 +5027,10 @@
       "confidence": 40
     },
     "ranking_explanation": "Confidence is based on average similarity 0.9104, maximum similarity 0.9135, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.8750.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 40
   },
   {
     "date": "12/31/25",
@@ -5317,7 +5365,10 @@
       "confidence": 36
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8310, maximum similarity 0.9030, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.4286.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 36
   },
   {
     "date": "12/31/25",
@@ -5652,7 +5703,10 @@
       "confidence": 36
     },
     "ranking_explanation": "Confidence is based on average similarity 0.8297, maximum similarity 0.8978, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.4286.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 36
   },
   {
     "date": "12/31/25",
@@ -5987,7 +6041,10 @@
       "confidence": 36
     },
     "ranking_explanation": "Confidence is based on average similarity 0.7627, maximum similarity 0.8877, frequency 8, merchant matches 0, debit/credit match 0.0000, description overlap 0.6667.",
-    "classification_frequency": 8
+    "classification_frequency": 8,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 36
   },
   {
     "date": "12/31/25",
@@ -6322,6 +6379,9 @@
       "confidence": 32
     },
     "ranking_explanation": "Confidence is based on average similarity 0.7607, maximum similarity 0.7607, frequency 1, merchant matches 0, debit/credit match 0.0000, description overlap 1.0000.",
-    "classification_frequency": 1
+    "classification_frequency": 1,
+    "verification_reason": "Gemini unavailable",
+    "verification_method": "Retrieval Only",
+    "verification_confidence": 32
   }
 ]

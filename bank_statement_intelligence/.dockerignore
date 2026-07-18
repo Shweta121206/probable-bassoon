@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.git/
+.vscode/
+.idea/
+
+output/
+test_inputs/
+
+*.pyc
+*.pyo
+*.pyd
+
+.env
