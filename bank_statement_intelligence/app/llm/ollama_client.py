@@ -2,8 +2,11 @@
 
 from __future__ import annotations
 
+import os
 import logging
 from typing import Any
+from xml.parsers.expat import model
+from xml.parsers.expat import model
 
 import requests
 
@@ -15,8 +18,8 @@ class OllamaClient:
 
     def __init__(
         self,
-        model: str = "llama3.2:3b",
-        base_url: str = "http://localhost:11434",
+        model: str | None = None,
+        base_url: str | None = None,
         timeout_seconds: int = 300,
     ) -> None:
         """Initialize the Ollama client.
@@ -26,7 +29,20 @@ class OllamaClient:
             base_url: Base URL of the local Ollama server.
             timeout_seconds: Request timeout for local model generation.
         """
+        if model is None:
+            model = os.getenv(
+                "OLLAMA_MODEL",
+                "llama3.2:3b"
+            )
+
         self.model = model
+
+        if base_url is None:
+            base_url = os.getenv(
+                "OLLAMA_HOST",
+                "http://localhost:11434"
+            )
+
         self.base_url = base_url.rstrip("/")
         self.timeout_seconds = timeout_seconds
 
