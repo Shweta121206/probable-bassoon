@@ -1,6 +1,8 @@
 services:
   bank-statement-intelligence:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
 
     container_name: bank_statement_intelligence
 
@@ -9,6 +11,9 @@ services:
 
     env_file:
       - .env
+
+    environment:
+      PYTHONUNBUFFERED: "1"
 
     volumes:
       - ./output:/app/output

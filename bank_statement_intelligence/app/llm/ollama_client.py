@@ -2,13 +2,14 @@
 
 from __future__ import annotations
 
-import os
 import logging
+import os
 from typing import Any
-from xml.parsers.expat import model
-from xml.parsers.expat import model
 
+from dotenv import load_dotenv
 import requests
+
+load_dotenv()
 
 logger = logging.getLogger(__name__)
 
